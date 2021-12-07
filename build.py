@@ -3,23 +3,23 @@
 OSSIE build script
 '''
 
-## Copyright 2007 Virginia Polytechnic Institute and State University
+# Copyright 2007 Virginia Polytechnic Institute and State University
 ##
-## This file is part of the OSSIE Installer.
+# This file is part of the OSSIE Installer.
 ##
-## OSSIE Installer is free software; you can redistribute it and/or modify
-## it under the terms of the GNU General Public License as published by
-## the Free Software Foundation; either version 2 of the License, or
-## (at your option) any later version.
+# OSSIE Installer is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
 ##
-## OSSIE Installer is distributed in the hope that it will be useful,
-## but WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-## GNU General Public License for more details.
+# OSSIE Installer is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 ##
-## You should have received a copy of the GNU General Public License
-## along with OSSIE Installer; if not, write to the Free Software
-## Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# You should have received a copy of the GNU General Public License
+# along with OSSIE Installer; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 import os
 import sys
@@ -27,18 +27,21 @@ import sys
 # Global variables
 ossieversion = "0.7.0"
 
+
 def usageString():
     '''Construct program usage string'''
     return __doc__ % sys.argv[0]
 
-def Usage( problem = None):
+
+def Usage(problem=None):
     '''print usage'''
     if problem is None:
         print(usageString())
         sys.exit(0)
     else:
-        sys.stderr.write( usageString() )
+        sys.stderr.write(usageString())
         Abort(problem)
+
 
 def Abort(problem):
     '''Print error message and exit'''
@@ -46,6 +49,7 @@ def Abort(problem):
     sys.stderr.write(problem)
     sys.stderr.write('\n\n')
     sys.exit(2)
+
 
 def BuildDirectory(installasroot=False):
     '''Try to rebuild directory'''
@@ -70,7 +74,7 @@ def BuildDirectory(installasroot=False):
                 return False
         else:
             if (os.system('make install') != 0):
-                problemstr  = 'FAILED: make install\n'
+                problemstr = 'FAILED: make install\n'
                 problemstr += '  Try changing permissions on install directory, e.g.\n'
                 problemstr += '  # chown -R myusername.myusername /sdr'
                 Abort(problemstr)
@@ -81,37 +85,36 @@ def BuildDirectory(installasroot=False):
         return True
 
 
-
 if __name__ == '__main__':
     if len(sys.argv) != 1:
         Usage()
 
     # check for existence, ownership of /sdr
-    #if not os.path.exists(os.path.sep + 'sdr'):
+    # if not os.path.exists(os.path.sep + 'sdr'):
         # /sdr does not exist
         #problemstr  = "  ERROR: directory " + os.path.sep + "sdr does not exist\n"
         #problemstr += "  Create with root permissions, and change ownership:\n"
-        #problemstr += "    # mkdir /sdr\n"
-        #problemstr += "    # chown -R myusername.myusername /sdr"
-        #Abort(problemstr)
-    #elif os.stat(os.path.sep + 'sdr')[5] == 0:
+        # problemstr += "    # mkdir /sdr\n"
+        # problemstr += "    # chown -R myusername.myusername /sdr"
+        # Abort(problemstr)
+    # elif os.stat(os.path.sep + 'sdr')[5] == 0:
         # /sdr exists but owned by root
         #problemstr  = "  ERROR: directory " + os.path.sep + "sdr is owned by root\n"
         #problemstr += "  Change ownership:\n"
-        #problemstr += "    # chown -R myusername.myusername /sdr"
-        #Abort(problemstr)
+        # problemstr += "    # chown -R myusername.myusername /sdr"
+        # Abort(problemstr)
 
     cwd = os.getcwd()
 
     # build system
 #    system_dirs = ['ossie', 'standardInterfaces', 'customInterfaces', 'nodebooter', 'wavLoader', 'SigProc',]
-    system_dirs = ['ossie', 'standardInterfaces', 'nodebooter', 'wavLoader', 'SigProc',]
+    system_dirs = ['ossie', 'standardInterfaces', 'nodebooter', 'wavLoader', 'SigProc', ]
     for dir in system_dirs:
         path = 'system' + os.path.sep + dir
         os.chdir(cwd + os.path.sep + path)
         print("building " + path + "...")
 
-        if not BuildDirectory( True ):
+        if not BuildDirectory(True):
             Abort("ERROR: building " + path + " failed")
 
     """
@@ -168,7 +171,3 @@ if __name__ == '__main__':
     print("    As root run /sbin/ldconfig\n")
     os.system('date')
     sys.exit(0)
-
-
-
-
