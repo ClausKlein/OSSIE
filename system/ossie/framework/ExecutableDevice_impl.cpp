@@ -47,6 +47,7 @@ Craig Neely, Carlos Aguayo, 12 December 2003
 #include <unistd.h>
 #endif
 
+#include <signal.h>
 #include <errno.h>
 
 #include "ossie/ExecutableDevice_impl.h"

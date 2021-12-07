@@ -51,6 +51,10 @@ def BuildDirectory(installasroot=False):
     '''Try to rebuild directory'''
     if not os.access('.doNotBuild', os.F_OK):
 
+        if (os.system('libtoolize -i') != 0):
+            if (os.system('glibtoolize -i --force') != 0):
+                print('FAILED: libtoolize -i')
+                return False
         if (os.system('./reconf') != 0):
             print('FAILED: reconf')
             return False

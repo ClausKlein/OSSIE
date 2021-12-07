@@ -250,7 +250,7 @@ void repack_bytes(
     unsigned int output_length,
     unsigned int * num_written)
 {
-    div_t d = div(input_length*input_sym_size,output_sym_size);
+    div_t d = div(input_length*input_sym_size,(int)output_sym_size);
     unsigned int req_output_length = d.quot;
     req_output_length += ( d.rem > 0 ) ? 1 : 0;
     if ( output_length < req_output_length ) {
