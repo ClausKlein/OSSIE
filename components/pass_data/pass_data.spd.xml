@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.2-->
+<!--Powered by Python-->
+<softpkg name="pass_data" id="DCE:08d3fb9a-272e-11dc-bd56-00123f573a7f">
+    <title/>
+    <author>
+        <name>Drew Cormier</name> 
+        <company>Wireless at Virginia Techi</company> 
+        <webpage>http://www.wireless.vt.edu</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/pass_data/pass_data.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/pass_data/pass_data.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:08d4effa-272e-11dc-b933-00123f573a7f">
+        <description>just passes data</description> 
+        <code type="Executable">
+            <localfile name="bin/pass_data.py"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<deploymentenforcement>
+    <application id="DCE:438bffd7-cf7d-4f29-b0bc-e66303d25a84" name="Name"/>
+    <deviceassignmentsequence>
+        <deviceassignmenttype>
+            <componentid>DCE:cfe19774-3629-11dc-843c-00123f573a7f</componentid> 
+            <assigndeviceid>DCE:5ba336ee-aaaa-aaaa-aaaa-00123f573a7f</assigndeviceid> 
+        </deviceassignmenttype>
+    </deviceassignmentsequence>
+</deploymentenforcement>

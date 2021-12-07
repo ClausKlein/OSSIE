@@ -1,0 +1,1 @@
+am_demod component accepts the data from USRP (usually through the decimation component), gets the magnitude of the I,Q components, adjusts the output level to be as close to the sound card's maximum, and feeds the sound to the sound card. 

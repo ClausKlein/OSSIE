@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "../dtd/properties.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<properties>
+    <simple type="short" id="DCE:3dd2928a-c369-11db-8bd5-000129227a88" name="quality" mode="readwrite">
+        <description>Quality of JPEG (between 1 and 5)</description> 
+        <value>1</value> 
+        <kind kindtype="configure"/>
+    </simple>
+</properties>

@@ -1,0 +1,26 @@
+<automations>
+    <producer>
+        <name>My only producer</name>
+        <toolname>AWG</toolname>
+    </producer>
+
+    <consumer>
+        <name>My first consumer</name>
+        <header>1</header>
+        <install_at_startup>True</install_at_startup>
+        <waveform>pass_data_waveform</waveform>
+        <componentInstance>pass_data</componentInstance>
+        <port>cshort_in</port>
+
+    </consumer>
+
+    <consumer>
+        <name>My second consumer</name>
+        <header>2</header>
+        <install_at_startup>True</install_at_startup>
+        <waveform>pass_data_waveform</waveform>
+        <componentInstance>pass_data</componentInstance>
+        <port>cshort_in</port>
+    </consumer>
+
+</automations>

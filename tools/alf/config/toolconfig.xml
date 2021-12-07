@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolconfiguration>
+    <tool>
+        <name>ALF</name>
+        <startfile>ALF.py</startfile>
+        <modulename></modulename>
+        <packagename></packagename>
+    </tool>
+</toolconfiguration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<softpkg type="sca_compliant" name="JPEG_VideoViewer" id="DCE:bd3f85ee-c11d-11db-96e1-000129227a88">
+    <title/>
+    <author>
+        <name>OSSIE Project</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/JPEG_VideoViewer/JPEG_VideoViewer.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/JPEG_VideoViewer/JPEG_VideoViewer.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:bd403480-c11d-11db-85bb-000129227a88" aepcompliance="aep_compliant">
+        <description>Default Description</description> 
+        <code type="Executable">
+            <localfile name="bin/JPEG_VideoViewer"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolconfiguration>
+    <tool>
+        <name>Speaker</name>
+        <startfile>speaker.py</startfile>
+        <modulename>speaker</modulename>
+        <packagename>speaker</packagename>
+        <interfaces>
+            <interface name="complexShort" namespace="standardInterfaces"/>
+        </interfaces>
+    </tool>
+</toolconfiguration>

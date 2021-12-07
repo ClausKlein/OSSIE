@@ -1,0 +1,19 @@
+OSSIE WebCamCapture component
+=============================
+
+Installation notes:
+
+1. This component requires the SDL library.
+In Fedora, this can be installed by typing the following command as root:  # yum install SDL-devel
+
+2. This component also requires that you have a driver for your webcam.
+gspca supports many webcams and is available from the livna repository.
+
+A list of webcams supported by gspca is available at http://mxhaard.free.fr/spca5xx.html .  You can check the vendor id and product id of your webcam by plugging it in and typing:
+# /sbin/lsusb
+
+To install gspca, first enable the livna repository for your operating system, then as root, type the following commands:
+
+# yum install gspca
+# modprobe gspca  [if yum installs a new kernel, you will need to reboot the system before this step]
+

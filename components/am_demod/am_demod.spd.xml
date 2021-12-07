@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.5.0b-->
+<!--Powered by Python-->
+<softpkg type="sca_compliant" name="am_demod" id="DCE:ac6ee9de-e6df-4019-b5d9-21cea4a39e9f">
+    <title/>
+    <author>
+        <name>OSSIE Project</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/am_demod/am_demod.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/am_demod/am_demod.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:ac6ee9de-e6df-4019-b5d9-21cea4a39e9f" aepcompliance="aep_compliant">
+        <description>Default Description</description> 
+        <code type="Executable">
+            <localfile name="bin/am_demod"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

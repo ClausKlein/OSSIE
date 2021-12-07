@@ -1,0 +1,38 @@
+############################################################
+## Instructions for Installing the OSSIE Waveform Developer
+############################################################
+
+Dependencies:
+* omniORB
+* omniORBpy
+* wxPython
+* OSSIE Core Framework
+* standardInterfaces (from ossie.mprg.org)
+
+(see http://ossie.mprg.org for more on installing these dependencies)
+
+- Once you unpackage the contents of the tarball there is no setup or
+  install file - just some configuration
+
+Configuration
+-------------
+
+If you have not already done so create a file called ossie.pth and put it
+in your python site-packages directory.
+Usually /usr/lib/python2.X/site-packages or /usr/local/lib/python2.X/site-packages
+
+- ossie.pth should contain the following lines (in addition to anything else
+that may or may not be in there):
+
+
+######################
+/usr/local/lib/python2.X/site-packages    ##(unless this is where you put the file)
+/full/path/to/WaveDev
+######################
+
+
+Running OSSIE Waveform Developer
+--------------------------------
+
+enter /path/to/WaveDev/wavedev and type:
+$ python wd.py

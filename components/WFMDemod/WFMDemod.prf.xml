@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "../dtd/properties.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.2-->
+<!--Powered by Python-->
+<properties>
+    <simplesequence id="port_list" mode="readonly" name="port_list" type="string">
+        <description>Returns a sequence of strings with the names of the available Provides ports</description> 
+        <kind kindtype="configure"/>
+        <values>
+            <value>dataIn::standardInterfaces.complexShort</value> 
+        </values>
+    </simplesequence>
+</properties>

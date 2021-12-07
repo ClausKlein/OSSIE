@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<softpkg id="DCE:23ecc262-8242-11dc-9d05-00123f63025f" name="TxDemo">
+    <title/>
+    <description>This component generates QPSK symbols</description> 
+    <author>
+        <name>OSSIE Project</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/TxDemo/TxDemo.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/TxDemo/TxDemo.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:23ed8652-8242-11dc-aba9-00123f63025f">
+        <description>Linux implementation</description> 
+        <code type="Executable">
+            <localfile name="bin/TxDemo"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

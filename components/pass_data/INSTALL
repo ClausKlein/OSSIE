@@ -1,0 +1,9 @@
+To install:
+    * in your_comp_name.spd.xml, replace:
+        <localfile name="bin/your_comp_name"/>
+      with:
+        <localfile name="bin/your_comp_name/your_comp_name.py"/>
+    * make sure that py_comp.py is executable
+        -chmod +x py_comp.py
+    * run the setup.py script
+        - python setup.py install

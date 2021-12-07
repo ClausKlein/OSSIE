@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import WaveDev.wavedev.ComponentFrame
+
+WaveDev.wavedev.ComponentFrame.newComponentFrame ()
+

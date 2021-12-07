@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<softpkg type="sca_compliant" name="AutomaticGainControl" id="DCE:a04dc9e4-8fec-11db-a862-00123f63025f">
+    <title>Automatic gain control component</title>
+    <description>Automatically controls gain levels for RF and audio signals</description>
+    <author>
+        <name>Joseph Gaeddert</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/AutomaticGainControl/AutomaticGainControl.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/AutomaticGainControl/AutomaticGainControl.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:a04e9590-8fec-11db-b300-00123f63025f" aepcompliance="aep_compliant">
+        <description>default implementation description</description> 
+        <code type="Executable">
+            <localfile name="bin/AutomaticGainControl"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

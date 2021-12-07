@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolconfiguration>
+    <tool>
+        <name>AWG</name>
+        <startfile>AWG.py</startfile>
+        <modulename>AWG</modulename>
+        <packagename>AWG</packagename>
+        <interfaces>
+            <interface name="complexFloat" namespace="standardInterfaces"/>
+            <interface name="complexShort" namespace="standardInterfaces"/>
+        </interfaces>
+    </tool>
+</toolconfiguration>

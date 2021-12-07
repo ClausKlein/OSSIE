@@ -1,0 +1,26 @@
+/*! \mainpage Sound Card (Capture)
+
+\section description  Basic description
+
+\section properties Properties
+
+\subsection prop_sample_rate sample_rate (DCE:ee0260bc-735a-4df5-bd71-726576ba8fbf)
+Sets the sampling frequency (Hz) of the sound recording device.
+
+\section interfaces Interfaces
+
+\subsection port_complexShortOut Port: "complexShortOut"
+Output stereo sound port.
+
+\section dependencies Software build dependencies
+  - ALSA
+  - standardInterfaces
+
+\section algorithm Detailed Description of Algorithm
+
+\section status Status and history
+
+\section references References
+
+*/
+

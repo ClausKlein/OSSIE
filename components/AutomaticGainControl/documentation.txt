@@ -1,0 +1,96 @@
+/****************************************************************************
+
+Copyright 2006 Virginia Polytechnic Institute and State University
+
+This file is part of the OSSIE AutomaticGainControl.
+
+OSSIE AutomaticGainControl is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+OSSIE AutomaticGainControl is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with OSSIE AutomaticGainControl; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+****************************************************************************/
+
+/*! \mainpage Automatic Gain Control
+
+\section description Basic description
+Automatic gain control (AGC) circuitry has long been used in radio
+communications to help receivers adapt to varying signal levels.  Strong
+signals are attenuated to prevent saturation while weak signals are amplified
+to... This limits the dynamic range of the signal and is necessary in hardware
+where fixed-point math is limited by dynamic range.
+
+AGCs can also be used for audio signals such as to keep the output sound level
+at a manageable and comfortable listening range.
+
+\section properties Properties
+The automatic gain control component allows a great deal of flexibility in its
+operation, allowing it to be used in a variety of applications with only a few
+modifications to its parameters.
+
+\subsection prop_elo Low energy threshold (DCE:aaf97fa0-d184-4d88-9954-3a1334c73d6d)
+The low energy threshold, \f$e_{lo}\f$, is that which triggers an increase in
+gain in the AGC.  It must be less than or equal to the 
+\ref prop_ehi "high energy threshold"
+
+\subsection prop_ehi High energy threshold (DCE:346e17c9-6678-483a-bffb-1909c64bddc0)
+When the incoming signal exceeds the high energy threshold, \f$e_{hi}\f$,
+the AGC reduces its gain.  This value must be greater than or equal to the
+\ref prop_elo "low energy threshold"
+
+\subsection prop_ka Time constant (attack) (DCE:4608b943-4fe2-49df-91fb-afa287b609d4)
+The attack time constant, \f$k_a\f$, governs the response time for which the
+AGC reduces its gain for high energy signals.
+
+\subsection prop_kr Time constant (release) (DCE:491ec3de-ed45-48af-a6fc-ca2d6465e136)
+The release time constant, \f$k_r\f$, governs the response time for which the
+AGC increases its gain for low energy signals.
+
+\subsection prop_gmin Minimum allowable gain (DCE:312f63fe-709a-4217-933b-c584c8d6a9bb)
+The minimum gain property, \f$g_{min}\f$, prevents the AGC from reducing its
+gain to an unmanageable level.
+
+\subsection prop_gmax Maximum allowable gain (DCE:8357ee0d-2417-46d9-8475-2e5778d797e4)
+The maximum gain property, \f$g_{max}\f$, prevents the AGC from increasing its
+gain to an unmanageable level.
+
+\section interfaces Interfaces
+The automatic gain control component contains two standard port interfaces,
+described here.
+
+\subsection port_data_in Port: "data_in"
+The input signal (complexShort).
+
+\subsection port_data_out Port: "data_out"
+The output signals (complexShort).
+
+\section dependencies Software build dependencies
+The AGC component relies on the AutomaticGainControl class in
+<a href="http://ossie-dev.mprg.org:8080/repos/ossie/browser/SigProc/trunk/SigProc">
+SigProc</a>, the OSSIE signal processing library.  It also relies on the standard
+iterfaces complexShort uses and provides ports descriptions.
+
+\section algorithm Detailed Description of Algorithm
+Basically this goes as follows:
+  - signal level too large, decrease gain
+  - signal level too small, increase gain
+
+The attack and rise times are dependent upon both the time constants and the
+sampling rates.
+
+\section status Status and history
+The AGC component is currently in development mode.
+
+\section references References
+
+*/
+

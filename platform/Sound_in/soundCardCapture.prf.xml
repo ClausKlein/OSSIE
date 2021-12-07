@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "../dtd/properties.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.5.0b-->
+<!--Powered by Python-->
+<properties>
+    <simple type="short" id="DCE:ee0260bc-735a-4df5-bd71-726576ba8fbf" name="sample_rate" mode="readwrite">
+        <description>Sample rate of sound card capture (Hz)</description>
+        <value>16000</value>
+        <kind kindtype="configure"/>
+    </simple>
+</properties>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<softpkg type="sca_compliant" name="WebCamCapture" id="DCE:7385d79e-c124-11db-b9e3-000129227a88">
+    <title/>
+    <author>
+        <name>OSSIE Project</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/WebCamCapture/WebCamCapture.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/WebCamCapture/WebCamCapture.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:7386a14c-c124-11db-b6c8-000129227a88" aepcompliance="aep_compliant">
+        <description>Default Description</description> 
+        <code type="Executable">
+            <localfile name="bin/WebCamCapture"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

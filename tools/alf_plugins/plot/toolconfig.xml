@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolconfiguration>
+    <tool>
+        <name>Plot</name>
+        <startfile>plot.py</startfile>
+        <modulename>plot</modulename>
+        <packagename>plot</packagename>
+        <interfaces>
+            <interface name="complexFloat" namespace="standardInterfaces"/>
+            <interface name="complexShort" namespace="standardInterfaces"/>
+        </interfaces>
+    </tool>
+</toolconfiguration>

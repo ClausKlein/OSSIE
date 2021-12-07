@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softwareassembly SYSTEM "../../xml/dtd/softwareassembly.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.0b-->
+<!--Powered by Python-->
+<softwareassembly id="DCE:e61898c6-3629-11dc-a997-00123f573a7f" name="OSSIE::pass_data_waveform">
+    <componentfiles>
+        <componentfile id="pass_data_c8d997ce-3629-11dc-875d-00123f573a7f" type="SPD">
+            <localfile name="xml/pass_data/pass_data.spd.xml"/>
+        </componentfile>
+    </componentfiles>
+    <partitioning>
+        <componentplacement>
+            <componentfileref refid="pass_data_c8d997ce-3629-11dc-875d-00123f573a7f"/>
+            <componentinstantiation id="DCE:cfe19774-3629-11dc-843c-00123f573a7f">
+                <usagename>pass_data</usagename> 
+                <findcomponent>
+                    <namingservice name="DomainName1/pass_data"/>
+                </findcomponent>
+            </componentinstantiation>
+        </componentplacement>
+    </partitioning>
+    <assemblycontroller>
+        <componentinstantiationref refid="DCE:cfe19774-3629-11dc-843c-00123f573a7f"/>
+    </assemblycontroller>
+    <connections>
+    </connections>
+</softwareassembly>

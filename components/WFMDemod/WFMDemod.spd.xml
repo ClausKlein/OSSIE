@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE softpkg SYSTEM "../dtd/softpkg.dtd">
+<!--Created with OSSIE WaveDev Beta Version 0.6.2-->
+<!--Powered by Python-->
+<softpkg id="DCE:7674ce46-e1a4-11dc-b82c-000c290e5893" name="WFMDemod">
+    <title/>
+    <description>FM Demodulator</description> 
+    <author>
+        <name>OSSIE Project</name> 
+        <company>Mobile and Portable Radio Research Group</company> 
+        <webpage>http://www.mprg.org</webpage> 
+    </author>
+    <propertyfile type="PRF">
+        <localfile name="xml/WFMDemod/WFMDemod.prf.xml"/>
+    </propertyfile>
+    <descriptor>
+        <localfile name="xml/WFMDemod/WFMDemod.scd.xml"/>
+    </descriptor>
+    <implementation id="DCE:7679e4b2-e1a4-11dc-9c98-000c290e5893">
+        <description>Description</description> 
+        <code type="Executable">
+            <localfile name="bin/WFMDemod"/>
+        </code>
+        <processor name="x86"/>
+    </implementation>
+</softpkg>

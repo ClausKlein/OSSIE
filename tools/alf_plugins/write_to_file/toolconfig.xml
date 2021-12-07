@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolconfiguration>
+    <tool>
+        <name>write_to_file</name>
+        <startfile>write_to_file.py</startfile>
+        <modulename>write_to_file</modulename>
+        <packagename>write_to_file</packagename>
+        <interfaces>
+            <interface name="complexFloat" namespace="standardInterfaces"/>
+            <interface name="complexShort" namespace="standardInterfaces"/>
+            <interface name="complexChar"  namespace="standardInterfaces"/>
+        </interfaces>
+    </tool>
+</toolconfiguration>
