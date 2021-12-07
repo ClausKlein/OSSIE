@@ -4,7 +4,7 @@ Makefile.in
 # /ar-lib
 # /mdate-sh
 # /py-compile
-# /test-driver
+test-driver
 # /ylwrap
 .deps/
 .libs/
@@ -46,6 +46,10 @@ m4/ltoptions.m4
 m4/ltsugar.m4
 m4/ltversion.m4
 m4/lt~obsolete.m4
+system/SigProc/m4/
+system/ossie/m4/
+system/standardInterfaces/m4/
+
 
 # Generated Makefile
 # (meta build system like autotools,
