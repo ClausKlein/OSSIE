@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 ****************************************************************************/
 
 /* SCA */
-#ifndef FILE_IMPL__H
+#ifndef FILE_IMPL_H
 #define FILE_IMPL_H
 
 /* Include files */
