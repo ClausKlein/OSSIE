@@ -113,6 +113,6 @@ system/standardInterfaces/realShort.h
 
 
 # pkg-config files
-!system/standardInterfaces/standardInterfaces.pc
-!system/SigProc/sigproc.pc
-!system/ossie/ossie.pc
+system/standardInterfaces/standardInterfaces.pc
+system/SigProc/sigproc.pc
+system/ossie/ossie.pc
